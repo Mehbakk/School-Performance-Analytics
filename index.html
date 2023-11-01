@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualisation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+</head>
+<body>
+<span class="bckg" ></span>
+<header  >
+    <h1>Dashboard</h1>
+    <nav >
+        <ul >
+            <li>
+                <a href="javascript:void(0);" data-title="Projects">Projects</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-title="Team">Team</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-title="Diary">Diary</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-title="Timeline">Timeline</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-title="Settings">Settings</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-title="Search">Search</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="title">
+        <h2>Projects</h2>
+        <a href="javascript:void(0);">El-Bakkali El Mehdi</a>
+    </div>
+
+    <article class="larg">
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; background: transparent; border: none"  >
+                    <div style="width: 65%; height: 420px ; border-radius: 12px; padding: 10px">
+                        <h5 style="margin: 10px ; text-align: center">Comparaison des Scores Masculins et Féminins par Matière </h5>
+                        <canvas id="barChartScores" width="800" height="380"></canvas>
+                    </div>
+                    <div style="width: 30%; height: 420px ; border-radius: 12px; padding: 10px">
+                        <h5 style="margin: 10px; text-align: center">Répartition des Tranches d'Âge des Étudiants</h5>
+                        <canvas id="doughnutChart" width="700" height="300"></canvas>
+                    </div>
+                    <div style="width: 30%; height: 420px ; border-radius: 12px; padding: 10px">
+                        <h5 style="margin: 10px ; text-align: center">Répartition des Problèmes de Santé au fonction d'age et de sexe </h5>
+                        <canvas id="combinedChart" width="700" height="700"></canvas>
+                    </div>
+                    <div style="width: 65%; height: 420px ; border-radius: 12px; padding: 10px">
+                        <h5 style="margin: 10px ; text-align: center">Répartition des étudiants travaillant en fonction de âge </h5>
+                        <canvas id="ageWorkChart" width="800" height="380"></canvas>
+                    </div>
+                    <div style="width: 65%; height: 420px ; border-radius: 12px; padding: 10px">
+                        <h5 style="margin: 10px ;text-align: center">Répartition des Étudiants par Sexe</h5>
+                        <canvas id="barChart" width="700" height="350"></canvas>
+                    </div>
+                    <div style=" display: inline; justify-content:center; align-items: center; width: 30%; height: 420px ; border-radius: 12px; padding: 10px">
+                        <h5 style="margin: 10px ; text-align: center">Répartition des Problèmes de Santé </h5>
+                        <canvas id="healthProblemsChart" width="500" height="200"></canvas>
+                    </div>
+
+
+                </div>
+    </article>
+</main>
+
+<script src="challenge.js">
+
+</script>
+</body>
+</html>
